@@ -1,0 +1,15 @@
+# Core dependencies
+fastapi>=0.95.2
+uvicorn>=0.22.0
+httpx>=0.24.1
+websockets>=11.0.3
+python-dotenv>=1.0.0
+
+# ROS 2 dependencies
+rclpy>=3.1.0
+rosidl-parser>=3.1.0
+example-interfaces>=0.9.2
+
+# Optional (for HMI frontend)
+numpy>=1.24.3
+matplotlib>=3.7.1  # For charts in HMI
