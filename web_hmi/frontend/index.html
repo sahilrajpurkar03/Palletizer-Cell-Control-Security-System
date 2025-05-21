@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bin Picking HMI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bin Picking Cell Control</h1>
+        
+        <!-- Status Indicators -->
+        <div class="status-grid">
+            <div class="status-card">
+                <h3>Door Status</h3>
+                <div id="door-status" class="status-indicator off">CLOSED</div>
+            </div>
+            <div class="status-card">
+                <h3>Emergency Button</h3>
+                <div id="e-button-status" class="status-indicator off">INACTIVE</div>
+            </div>
+            <div class="status-card">
+                <h3>Stack Light</h3>
+                <div id="stack-light" class="light-circle gray"></div>
+            </div>
+            <div class="status-card">
+                <h3>Last Barcode</h3>
+                <div id="barcode" class="barcode-display">-----</div>
+            </div>
+        </div>
+
+        <!-- Request/Response Logs -->
+        <div class="log-section">
+            <h3>Last Request</h3>
+            <pre id="last-request">None</pre>
+            <h3>Last Response</h3>
+            <pre id="last-response">None</pre>
+        </div>
+
+        <!-- Manual Controls (for testing) -->
+        <div class="control-panel">
+            <button id="toggle-door">Toggle Door</button>
+            <button id="trigger-emergency">Press Emergency</button>
+            <button id="reset-emergency">Reset Emergency</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@ app = FastAPI()
 
 # Configuration
 CLIENT_ENDPOINT = "http://localhost:8081/confirmPick"
+HMI_ENDPOINT = "http://localhost:8000/update_request"  
 
 class PickRequest(BaseModel):
     pickId: int
@@ -27,8 +28,8 @@ async def handle_pick_request(request: PickRequest):
     logging.info(f"Received pick request: {request}")
     
     try:
-        # Forward to robotic cell client (in a real scenario, this would be async)
         async with httpx.AsyncClient() as client:
+            # Forward to robotic cell client
             response = await client.post(
                 CLIENT_ENDPOINT,
                 json={
@@ -40,6 +41,20 @@ async def handle_pick_request(request: PickRequest):
             
             if response.status_code != 200:
                 raise HTTPException(status_code=500, detail="Client processing failed")
+
+            # Forward to HMI (added section)
+            try:
+                async with httpx.AsyncClient() as hmi_client:
+                    hmi_response = await hmi_client.post(
+                        HMI_ENDPOINT,
+                        json={
+                            "last_request": request.dict(),
+                            "last_response": response.json()
+                        },
+                        timeout=1.0
+                    )
+            except Exception as hmi_error:
+                logging.warning(f"Could not update HMI: {hmi_error}")
                 
             return response.json()
             
