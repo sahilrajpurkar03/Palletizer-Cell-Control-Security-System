@@ -1,0 +1,3 @@
+[console_scripts]
+light_node = stack_light.light_node:main
+

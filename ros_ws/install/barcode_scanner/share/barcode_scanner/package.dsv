@@ -1,0 +1,6 @@
+source;share/barcode_scanner/hook/pythonpath.ps1
+source;share/barcode_scanner/hook/pythonpath.dsv
+source;share/barcode_scanner/hook/pythonpath.sh
+source;share/barcode_scanner/hook/ament_prefix_path.ps1
+source;share/barcode_scanner/hook/ament_prefix_path.dsv
+source;share/barcode_scanner/hook/ament_prefix_path.sh

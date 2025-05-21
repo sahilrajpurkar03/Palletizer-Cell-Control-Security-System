@@ -1,0 +1,21 @@
+[0.893s] Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/door_handle build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/install.log --single-version-externally-managed install_data
+[1.072s] running egg_info
+[1.074s] writing ../../build/door_handle/door_handle.egg-info/PKG-INFO
+[1.075s] writing dependency_links to ../../build/door_handle/door_handle.egg-info/dependency_links.txt
+[1.075s] writing entry points to ../../build/door_handle/door_handle.egg-info/entry_points.txt
+[1.075s] writing requirements to ../../build/door_handle/door_handle.egg-info/requires.txt
+[1.075s] writing top-level names to ../../build/door_handle/door_handle.egg-info/top_level.txt
+[1.076s] reading manifest file '../../build/door_handle/door_handle.egg-info/SOURCES.txt'
+[1.076s] writing manifest file '../../build/door_handle/door_handle.egg-info/SOURCES.txt'
+[1.076s] running build
+[1.077s] running build_py
+[1.078s] running install
+[1.078s] running install_lib
+[1.078s] running install_data
+[1.078s] running install_egg_info
+[1.081s] removing '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages/door_handle-0.0.0-py3.10.egg-info' (and everything under it)
+[1.081s] Copying ../../build/door_handle/door_handle.egg-info to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages/door_handle-0.0.0-py3.10.egg-info
+[1.081s] running install_scripts
+[1.096s] Installing door_node script to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/door_handle
+[1.096s] writing list of installed files to '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/install.log'
+[1.132s] Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/door_handle build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/install.log --single-version-externally-managed install_data

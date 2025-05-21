@@ -1,0 +1,3 @@
+[console_scripts]
+scanner_node = barcode_scanner.scanner_node:main
+

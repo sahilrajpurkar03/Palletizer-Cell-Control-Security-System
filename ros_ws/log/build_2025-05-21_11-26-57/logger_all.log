@@ -1,0 +1,277 @@
+[0.064s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.064s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7cf11fa466b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cf11fb4f610>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cf11fb4f610>>, mixin_verb=('build',))
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.159s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/barcode_scanner) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/barcode_scanner' with type 'ros.ament_python' and name 'barcode_scanner'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/door_handle) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/door_handle' with type 'ros.ament_python' and name 'door_handle'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/emergency_button) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/emergency_button' with type 'ros.ament_python' and name 'emergency_button'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/stack_light) by extension 'ros'
+[0.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stack_light' with type 'ros.ament_python' and name 'stack_light'
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.189s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install
+[0.190s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'barcode_scanner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'barcode_scanner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner', 'merge_install': False, 'path': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'door_handle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'door_handle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle', 'merge_install': False, 'path': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'emergency_button' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'emergency_button' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button', 'merge_install': False, 'path': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button', 'symlink_install': False, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'stack_light' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'stack_light' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light', 'merge_install': False, 'path': '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light', 'symlink_install': False, 'test_result_base': None}
+[0.213s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.213s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.214s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner' with build type 'ament_python'
+[0.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('barcode_scanner', 'ament_prefix_path')
+[0.215s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/hook/ament_prefix_path.ps1'
+[0.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/hook/ament_prefix_path.dsv'
+[0.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/hook/ament_prefix_path.sh'
+[0.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle' with build type 'ament_python'
+[0.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('door_handle', 'ament_prefix_path')
+[0.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/hook/ament_prefix_path.ps1'
+[0.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/hook/ament_prefix_path.dsv'
+[0.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/hook/ament_prefix_path.sh'
+[0.219s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.219s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.221s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button' with build type 'ament_python'
+[0.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('emergency_button', 'ament_prefix_path')
+[0.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/hook/ament_prefix_path.ps1'
+[0.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/hook/ament_prefix_path.dsv'
+[0.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/hook/ament_prefix_path.sh'
+[0.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.226s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light' with build type 'ament_python'
+[0.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('stack_light', 'ament_prefix_path')
+[0.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/hook/ament_prefix_path.ps1'
+[0.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/hook/ament_prefix_path.dsv'
+[0.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/hook/ament_prefix_path.sh'
+[0.227s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.378s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner'
+[0.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.535s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle'
+[0.536s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.536s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.695s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button'
+[0.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.696s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/barcode_scanner build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/install.log --single-version-externally-managed install_data
+[1.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/emergency_button build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/install.log --single-version-externally-managed install_data
+[1.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stack_light build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/install.log --single-version-externally-managed install_data
+[1.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/door_handle build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/install.log --single-version-externally-managed install_data
+[1.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/emergency_button build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/install.log --single-version-externally-managed install_data
+[1.292s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button' for CMake module files
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button' for CMake config files
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/bin'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/pkgconfig/emergency_button.pc'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages'
+[1.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('emergency_button', 'pythonpath')
+[1.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/hook/pythonpath.ps1'
+[1.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/hook/pythonpath.dsv'
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/hook/pythonpath.sh'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/bin'
+[1.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(emergency_button)
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/package.ps1'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/package.dsv'
+[1.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/package.sh'
+[1.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/package.bash'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button/package.zsh'
+[1.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/colcon-core/packages/emergency_button)
+[1.307s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner' for CMake module files
+[1.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/barcode_scanner build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/install.log --single-version-externally-managed install_data
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner' for CMake config files
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib'
+[1.310s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/bin'
+[1.310s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/pkgconfig/barcode_scanner.pc'
+[1.310s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages'
+[1.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('barcode_scanner', 'pythonpath')
+[1.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/hook/pythonpath.ps1'
+[1.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/hook/pythonpath.dsv'
+[1.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/hook/pythonpath.sh'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/bin'
+[1.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(barcode_scanner)
+[1.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/package.ps1'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/package.dsv'
+[1.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/package.sh'
+[1.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/package.bash'
+[1.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/barcode_scanner/package.zsh'
+[1.318s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/share/colcon-core/packages/barcode_scanner)
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light' for CMake module files
+[1.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stack_light build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/install.log --single-version-externally-managed install_data
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light' for CMake config files
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib'
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/bin'
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/pkgconfig/stack_light.pc'
+[1.322s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages'
+[1.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('stack_light', 'pythonpath')
+[1.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/hook/pythonpath.ps1'
+[1.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/hook/pythonpath.dsv'
+[1.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/hook/pythonpath.sh'
+[1.325s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/bin'
+[1.325s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stack_light)
+[1.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/package.ps1'
+[1.326s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/package.dsv'
+[1.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/package.sh'
+[1.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/package.bash'
+[1.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light/package.zsh'
+[1.328s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/colcon-core/packages/stack_light)
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle' for CMake module files
+[1.330s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle' for CMake config files
+[1.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/door_handle' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/door_handle build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/door_handle/install.log --single-version-externally-managed install_data
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib'
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/bin'
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/pkgconfig/door_handle.pc'
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/lib/python3.10/site-packages'
+[1.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('door_handle', 'pythonpath')
+[1.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/hook/pythonpath.ps1'
+[1.333s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/hook/pythonpath.dsv'
+[1.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/hook/pythonpath.sh'
+[1.335s] Level 1:colcon.colcon_core.environment:checking '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/bin'
+[1.335s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(door_handle)
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/package.ps1'
+[1.336s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/package.dsv'
+[1.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/package.sh'
+[1.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/package.bash'
+[1.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/door_handle/package.zsh'
+[1.339s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/door_handle/share/colcon-core/packages/door_handle)
+[1.339s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.339s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.340s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.340s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.347s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.347s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.347s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.370s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.370s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/local_setup.ps1'
+[1.372s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/_local_setup_util_ps1.py'
+[1.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/setup.ps1'
+[1.376s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/local_setup.sh'
+[1.377s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/_local_setup_util_sh.py'
+[1.378s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/setup.sh'
+[1.380s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/local_setup.bash'
+[1.381s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/setup.bash'
+[1.383s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/local_setup.zsh'
+[1.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/setup.zsh'

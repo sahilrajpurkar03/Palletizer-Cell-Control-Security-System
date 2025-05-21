@@ -1,0 +1,36 @@
+[0.869s] Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/emergency_button build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/install.log --single-version-externally-managed install_data
+[1.022s] running egg_info
+[1.022s] creating ../../build/emergency_button/emergency_button.egg-info
+[1.022s] writing ../../build/emergency_button/emergency_button.egg-info/PKG-INFO
+[1.022s] writing dependency_links to ../../build/emergency_button/emergency_button.egg-info/dependency_links.txt
+[1.023s] writing entry points to ../../build/emergency_button/emergency_button.egg-info/entry_points.txt
+[1.023s] writing requirements to ../../build/emergency_button/emergency_button.egg-info/requires.txt
+[1.023s] writing top-level names to ../../build/emergency_button/emergency_button.egg-info/top_level.txt
+[1.023s] writing manifest file '../../build/emergency_button/emergency_button.egg-info/SOURCES.txt'
+[1.024s] reading manifest file '../../build/emergency_button/emergency_button.egg-info/SOURCES.txt'
+[1.024s] writing manifest file '../../build/emergency_button/emergency_button.egg-info/SOURCES.txt'
+[1.024s] running build
+[1.024s] running build_py
+[1.025s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build
+[1.025s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build/lib
+[1.025s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build/lib/emergency_button
+[1.025s] copying emergency_button/__init__.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build/lib/emergency_button
+[1.025s] copying emergency_button/ebutton_node.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build/lib/emergency_button
+[1.025s] running install
+[1.025s] running install_lib
+[1.026s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages/emergency_button
+[1.026s] copying /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build/lib/emergency_button/__init__.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages/emergency_button
+[1.026s] copying /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build/lib/emergency_button/ebutton_node.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages/emergency_button
+[1.026s] byte-compiling /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages/emergency_button/__init__.py to __init__.cpython-310.pyc
+[1.026s] byte-compiling /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages/emergency_button/ebutton_node.py to ebutton_node.cpython-310.pyc
+[1.026s] running install_data
+[1.027s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/ament_index
+[1.027s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/ament_index/resource_index
+[1.027s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/ament_index/resource_index/packages
+[1.027s] copying resource/emergency_button -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/ament_index/resource_index/packages
+[1.027s] copying package.xml -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/share/emergency_button
+[1.027s] running install_egg_info
+[1.028s] Copying ../../build/emergency_button/emergency_button.egg-info to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages/emergency_button-0.0.0-py3.10.egg-info
+[1.028s] running install_scripts
+[1.043s] writing list of installed files to '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/install.log'
+[1.060s] Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/emergency_button' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/emergency_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/emergency_button build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/emergency_button/install.log --single-version-externally-managed install_data

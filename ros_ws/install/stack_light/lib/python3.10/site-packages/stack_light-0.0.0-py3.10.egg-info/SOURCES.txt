@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/stack_light/stack_light.egg-info/PKG-INFO
+../../build/stack_light/stack_light.egg-info/SOURCES.txt
+../../build/stack_light/stack_light.egg-info/dependency_links.txt
+../../build/stack_light/stack_light.egg-info/entry_points.txt
+../../build/stack_light/stack_light.egg-info/requires.txt
+../../build/stack_light/stack_light.egg-info/top_level.txt
+../../build/stack_light/stack_light.egg-info/zip-safe
+resource/stack_light
+stack_light/__init__.py
+stack_light/light_node.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

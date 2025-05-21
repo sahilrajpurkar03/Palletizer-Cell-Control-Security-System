@@ -1,0 +1,36 @@
+[0.878s] Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stack_light build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/install.log --single-version-externally-managed install_data
+[1.036s] running egg_info
+[1.037s] creating ../../build/stack_light/stack_light.egg-info
+[1.037s] writing ../../build/stack_light/stack_light.egg-info/PKG-INFO
+[1.037s] writing dependency_links to ../../build/stack_light/stack_light.egg-info/dependency_links.txt
+[1.037s] writing entry points to ../../build/stack_light/stack_light.egg-info/entry_points.txt
+[1.037s] writing requirements to ../../build/stack_light/stack_light.egg-info/requires.txt
+[1.037s] writing top-level names to ../../build/stack_light/stack_light.egg-info/top_level.txt
+[1.037s] writing manifest file '../../build/stack_light/stack_light.egg-info/SOURCES.txt'
+[1.038s] reading manifest file '../../build/stack_light/stack_light.egg-info/SOURCES.txt'
+[1.039s] writing manifest file '../../build/stack_light/stack_light.egg-info/SOURCES.txt'
+[1.039s] running build
+[1.039s] running build_py
+[1.039s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build
+[1.039s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build/lib
+[1.039s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build/lib/stack_light
+[1.039s] copying stack_light/light_node.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build/lib/stack_light
+[1.039s] copying stack_light/__init__.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build/lib/stack_light
+[1.040s] running install
+[1.040s] running install_lib
+[1.040s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light
+[1.040s] copying /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build/lib/stack_light/light_node.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light
+[1.040s] copying /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build/lib/stack_light/__init__.py -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light
+[1.040s] byte-compiling /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light/light_node.py to light_node.cpython-310.pyc
+[1.041s] byte-compiling /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light/__init__.py to __init__.cpython-310.pyc
+[1.041s] running install_data
+[1.041s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/ament_index
+[1.041s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/ament_index/resource_index
+[1.041s] creating /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/ament_index/resource_index/packages
+[1.041s] copying resource/stack_light -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/ament_index/resource_index/packages
+[1.041s] copying package.xml -> /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/share/stack_light
+[1.041s] running install_egg_info
+[1.042s] Copying ../../build/stack_light/stack_light.egg-info to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light-0.0.0-py3.10.egg-info
+[1.042s] running install_scripts
+[1.058s] writing list of installed files to '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/install.log'
+[1.088s] Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/stack_light' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stack_light build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/install.log --single-version-externally-managed install_data

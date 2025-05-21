@@ -1,0 +1,3 @@
+[console_scripts]
+ebutton_node = emergency_button.ebutton_node:main
+

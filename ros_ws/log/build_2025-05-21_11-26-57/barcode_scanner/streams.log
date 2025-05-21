@@ -1,0 +1,21 @@
+[0.871s] Invoking command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/barcode_scanner build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/install.log --single-version-externally-managed install_data
+[1.030s] running egg_info
+[1.031s] writing ../../build/barcode_scanner/barcode_scanner.egg-info/PKG-INFO
+[1.031s] writing dependency_links to ../../build/barcode_scanner/barcode_scanner.egg-info/dependency_links.txt
+[1.031s] writing entry points to ../../build/barcode_scanner/barcode_scanner.egg-info/entry_points.txt
+[1.031s] writing requirements to ../../build/barcode_scanner/barcode_scanner.egg-info/requires.txt
+[1.031s] writing top-level names to ../../build/barcode_scanner/barcode_scanner.egg-info/top_level.txt
+[1.033s] reading manifest file '../../build/barcode_scanner/barcode_scanner.egg-info/SOURCES.txt'
+[1.033s] writing manifest file '../../build/barcode_scanner/barcode_scanner.egg-info/SOURCES.txt'
+[1.033s] running build
+[1.034s] running build_py
+[1.034s] running install
+[1.034s] running install_lib
+[1.035s] running install_data
+[1.035s] running install_egg_info
+[1.037s] removing '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages/barcode_scanner-0.0.0-py3.10.egg-info' (and everything under it)
+[1.037s] Copying ../../build/barcode_scanner/barcode_scanner.egg-info to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages/barcode_scanner-0.0.0-py3.10.egg-info
+[1.038s] running install_scripts
+[1.054s] Installing scanner_node script to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/barcode_scanner
+[1.054s] writing list of installed files to '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/install.log'
+[1.094s] Invoked command in '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/src/barcode_scanner' returned '0': PYTHONPATH=/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/barcode_scanner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/barcode_scanner build --build-base /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/build install --record /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/barcode_scanner/install.log --single-version-externally-managed install_data

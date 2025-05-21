@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/stack_light/stack_light.egg-info/PKG-INFO
+writing dependency_links to ../../build/stack_light/stack_light.egg-info/dependency_links.txt
+writing entry points to ../../build/stack_light/stack_light.egg-info/entry_points.txt
+writing requirements to ../../build/stack_light/stack_light.egg-info/requires.txt
+writing top-level names to ../../build/stack_light/stack_light.egg-info/top_level.txt
+reading manifest file '../../build/stack_light/stack_light.egg-info/SOURCES.txt'
+writing manifest file '../../build/stack_light/stack_light.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/stack_light/stack_light.egg-info to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/python3.10/site-packages/stack_light-0.0.0-py3.10.egg-info
+running install_scripts
+Installing light_node script to /home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/install/stack_light/lib/stack_light
+writing list of installed files to '/home/sahil-dev/Sereact/bin-picking-cell-control/ros_ws/build/stack_light/install.log'

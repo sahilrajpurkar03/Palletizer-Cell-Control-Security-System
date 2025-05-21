@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/barcode_scanner/barcode_scanner.egg-info/PKG-INFO
+../../build/barcode_scanner/barcode_scanner.egg-info/SOURCES.txt
+../../build/barcode_scanner/barcode_scanner.egg-info/dependency_links.txt
+../../build/barcode_scanner/barcode_scanner.egg-info/entry_points.txt
+../../build/barcode_scanner/barcode_scanner.egg-info/requires.txt
+../../build/barcode_scanner/barcode_scanner.egg-info/top_level.txt
+../../build/barcode_scanner/barcode_scanner.egg-info/zip-safe
+barcode_scanner/__init__.py
+barcode_scanner/scanner_node.py
+resource/barcode_scanner
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
