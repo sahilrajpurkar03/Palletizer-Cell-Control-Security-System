@@ -12,7 +12,6 @@ A complete implementation of a robotic bin picking cell with ROS 2 control, API 
 - [API Usage](#api-usage)
 - [Debugging](#debugging)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ## Prerequisites
 
