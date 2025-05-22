@@ -8,8 +8,8 @@ A complete implementation of a robotic bin picking cell with ROS 2 control, API 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
-- [System Components](#system-components)
 - [API Usage](#api-usage)
+- [System Components](#system-components)
 - [Debugging](#debugging)
 - [Troubleshooting](#troubleshooting)
 
@@ -35,7 +35,7 @@ sudo apt update && sudo apt install -y \
 ### Clone the repository:
 ```bash
 git clone https://github.com/your-repo/bin_picking_cell_control.git
-cd bin_picking_cell_control
+cd bin-picking-cell-control/
 ```
 
 ### Install Python dependencies:
@@ -55,6 +55,7 @@ cd ..
 
 ### Launch the Entire System
 ```bash
+cd ~/bin-picking-cell-control
 chmod +x launch.sh  # Only needed once
 ./launch.sh
 ```
@@ -70,6 +71,59 @@ This will start:
 Open in your browser:  
 [http://localhost:8000](http://localhost:8000)
 
+## API Usage
+
+### Send Pick Request
+```bash
+curl -X POST "http://localhost:8080/pick" \
+  -H "Content-Type: application/json" \
+  -d '{"pickId": 123, "quantity": 4}'
+```
+
+---
+
+### Expected Successful Response  
+When:
+- **Door is closed**
+- **Emergency button is not pressed**  
+**Status:** Green light
+
+```json
+{
+  "pickId": 123,
+  "pickSuccessful": true,
+  "errorMessage": null,
+  "itemBarcode": "58392"
+}
+```
+
+---
+
+### Error Responses  
+
+#### 1. Door is open, emergency button is not pressed  
+**Status:** Yellow light
+
+```json
+{
+  "pickId": 123,
+  "pickSuccessful": false,
+  "errorMessage": "CELL DOOR OPEN",
+  "itemBarcode": null
+}
+```
+
+#### 2. Door is closed, emergency button is pressed  
+**Status:** Red light
+
+```json
+{
+  "pickId": 123,
+  "pickSuccessful": false,
+  "errorMessage": "Emergency button pressed",
+  "itemBarcode": null
+}
+```
 ## System Components
 
 | Component        | Port/Topic           | Description                                  |
@@ -81,35 +135,6 @@ Open in your browser:
 | Door Handle      | `/door_status`       | Tracks door open/closed state                |
 | Emergency Button | `/e_button_status`   | Monitors emergency stop state                |
 | Stack Light      | `/stack_light_status`| Visualizes system status (0: normal, 1: paused, -1: emergency) |
-
-## API Usage
-
-### Send Pick Request
-```bash
-curl -X POST "http://localhost:8080/pick" \
-  -H "Content-Type: application/json" \
-  -d '{"pickId": 123, "quantity": 4}'
-```
-
-### Expected Successful Response
-```json
-{
-  "pickId": 123,
-  "pickSuccessful": true,
-  "errorMessage": null,
-  "itemBarcode": "58392"
-}
-```
-
-### Error Responses
-```json
-{
-  "pickId": 123,
-  "pickSuccessful": false,
-  "errorMessage": "CELL DOOR OPEN",
-  "itemBarcode": null
-}
-```
 
 ## Debugging
 
@@ -165,10 +190,6 @@ kill -9 <PID>       # Terminate conflicting process
 #### HMI not updating:
 - Check WebSocket connection in browser developer tools
 - Verify ROS nodes are publishing data
-
-## License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
