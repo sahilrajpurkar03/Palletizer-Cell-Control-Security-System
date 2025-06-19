@@ -7,38 +7,38 @@ from typing import Optional
 app = FastAPI()
 
 # Configuration
-CLIENT_ENDPOINT = "http://localhost:8081/confirmPick"
-HMI_ENDPOINT = "http://localhost:8000/update_request"  
+CLIENT_ENDPOINT = "http://localhost:8081/confirmPalletize"
+HMI_ENDPOINT = "http://localhost:8000/update_request"
 
-class PickRequest(BaseModel):
-    pickId: int
-    quantity: int
+class PalletizeRequest(BaseModel):
+    palletId: int
+    boxCount: int
 
-class PickResponse(BaseModel):
-    pickId: int
-    pickSuccessful: bool
+class PalletizeResponse(BaseModel):
+    palletId: int
+    palletizeSuccessful: bool
     errorMessage: Optional[str] = None
-    itemBarcode: Optional[str] = None
+    lastBoxBarcode: Optional[str] = None
 
-@app.post("/pick")
-async def handle_pick_request(request: PickRequest):
+@app.post("/palletize")
+async def handle_palletize_request(request: PalletizeRequest):
     """
-    Endpoint that receives pick requests from WMS
+    Endpoint that receives palletizing requests from WMS
     """
-    logging.info(f"Received pick request: {request}")
-    
+    logging.info(f"Received palletize request: {request}")
+
     try:
         async with httpx.AsyncClient() as client:
             # Forward to robotic cell client
             response = await client.post(
                 CLIENT_ENDPOINT,
                 json={
-                    "pickId": request.pickId,
-                    "quantity": request.quantity
+                    "palletId": request.palletId,
+                    "boxCount": request.boxCount
                 },
                 timeout=30.0
             )
-            
+
             if response.status_code != 200:
                 raise HTTPException(status_code=500, detail="Client processing failed")
 
@@ -55,11 +55,11 @@ async def handle_pick_request(request: PickRequest):
                     )
             except Exception as hmi_error:
                 logging.warning(f"Could not update HMI: {hmi_error}")
-                
+
             return response.json()
-            
+
     except Exception as e:
-        logging.error(f"Error processing pick request: {e}")
+        logging.error(f"Error processing palletize request: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

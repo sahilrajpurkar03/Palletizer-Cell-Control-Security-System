@@ -48,53 +48,53 @@ ros_thread = threading.Thread(target=spin_ros_node, daemon=True)
 ros_thread.start()
 
 # Data model for response
-class PickConfirmation(BaseModel):
-    pickId: int
-    pickSuccessful: bool
+class PalletizeConfirmation(BaseModel):
+    palletId: int
+    palletizeSuccessful: bool
     errorMessage: Optional[str] = None
-    itemBarcode: Optional[str] = None
+    lastBoxBarcode: Optional[str] = None
 
-@app.post("/confirmPick")
-async def confirm_pick(pick_request: dict):
+@app.post("/confirmPalletize")
+async def confirm_palletize(palletize_request: dict):
     """
-    Endpoint that simulates the robotic cell processing
+    Endpoint that simulates the robotic palletizer cell processing
     """
     try:
-        pick_id = pick_request.get("pickId")
-        quantity = pick_request.get("quantity", 1)
+        pallet_id = palletize_request.get("palletId")
+        box_count = palletize_request.get("boxCount", 1)
 
         # Get live status
         door_closed, e_button_pressed = cell_status.get_status()
 
-        logging.info(f"[Pick ID {pick_id}] Door Closed: {door_closed}, Emergency Pressed: {e_button_pressed}")
+        logging.info(f"[Pallet ID {pallet_id}] Door Closed: {door_closed}, Emergency Pressed: {e_button_pressed}")
 
         if e_button_pressed:
-            return PickConfirmation(
-                pickId=pick_id,
-                pickSuccessful=False,
+            return PalletizeConfirmation(
+                palletId=pallet_id,
+                palletizeSuccessful=False,
                 errorMessage="Emergency button pressed",
-                itemBarcode=None
+                lastBoxBarcode=None
             )
 
         if not door_closed:
-            return PickConfirmation(
-                pickId=pick_id,
-                pickSuccessful=False,
+            return PalletizeConfirmation(
+                palletId=pallet_id,
+                palletizeSuccessful=False,
                 errorMessage="Cell door open",
-                itemBarcode=None
+                lastBoxBarcode=None
             )
 
-        # Simulate successful pick
+        # Simulate successful palletizing
         barcode = str(random.randint(10000, 99999))  # Mock barcode
-        return PickConfirmation(
-            pickId=pick_id,
-            pickSuccessful=True,
+        return PalletizeConfirmation(
+            palletId=pallet_id,
+            palletizeSuccessful=True,
             errorMessage=None,
-            itemBarcode=barcode
+            lastBoxBarcode=barcode
         )
 
     except Exception as e:
-        logging.error(f"Error processing pick: {e}")
+        logging.error(f"Error processing palletize: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

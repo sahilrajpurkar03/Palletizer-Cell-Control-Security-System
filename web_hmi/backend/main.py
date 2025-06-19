@@ -15,7 +15,7 @@ from pathlib import Path
 os.environ["UVICORN_WEB_CONCURRENCY"] = "1"
 os.environ["WEB_CONCURRENCY"] = "1"
 
-app = FastAPI(title="Bin Picking HMI")
+app = FastAPI(title="Automated Palletizer HMI")
 
 # Path configuration
 BASE_DIR = Path(__file__).parent

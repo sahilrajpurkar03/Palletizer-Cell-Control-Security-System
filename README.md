@@ -1,8 +1,7 @@
-# Bin Picking Cell Control System
 
-![System Architecture](docs/system_architecture.png)
+# Automated Palletizer Cell Control System
 
-A complete implementation of a robotic bin picking cell with ROS 2 control, API server/client, and web-based HMI.
+A complete simulation of an automated palletizing robotic cell, including ROS 2 nodes, REST API server/client, and a real-time web-based HMI. The system handles palletizing requests from the warehouse management system (WMS), monitors the cell status (door, emergency button, stack-light), and allows human operators to interact through an HMI.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -22,20 +21,15 @@ A complete implementation of a robotic bin picking cell with ROS 2 control, API 
 
 ### Dependencies
 ```bash
-sudo apt update && sudo apt install -y \
-    python3-pip \
-    python3-colcon-common-extensions \
-    python3-vcstool \
-    git \
-    build-essential
+sudo apt update && sudo apt install -y     python3-pip     python3-colcon-common-extensions     python3-vcstool     git     build-essential
 ```
 
 ## Installation
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/your-repo/bin_picking_cell_control.git
-cd bin-picking-cell-control/
+git clone https://github.com/your-repo/automated_palletizer_cell_control.git
+cd automated_palletizer_cell_control/
 ```
 
 ### Install Python dependencies:
@@ -55,7 +49,7 @@ cd ..
 
 ### Launch the Entire System
 ```bash
-cd ~/bin-picking-cell-control
+cd ~/automated_palletizer_cell_control
 chmod +x launch.sh  # Only needed once
 ./launch.sh
 ```
@@ -73,14 +67,10 @@ Open in your browser:
 
 ## API Usage
 
-### Send Pick Request
+### Send Palletize Request
 ```bash
-curl -X POST "http://localhost:8080/pick" \
-  -H "Content-Type: application/json" \
-  -d '{"pickId": 123, "quantity": 4}'
+curl -X POST "http://localhost:8080/palletize"   -H "Content-Type: application/json"   -d '{"palletId": 123, "boxCount": 4}'
 ```
-
----
 
 ### Expected Successful Response  
 When:
@@ -90,14 +80,12 @@ When:
 
 ```json
 {
-  "pickId": 123,
-  "pickSuccessful": true,
+  "palletId": 123,
+  "palletizeSuccessful": true,
   "errorMessage": null,
-  "itemBarcode": "58392"
+  "lastBoxBarcode": "58392"
 }
 ```
-
----
 
 ### Error Responses  
 
@@ -106,10 +94,10 @@ When:
 
 ```json
 {
-  "pickId": 123,
-  "pickSuccessful": false,
+  "palletId": 123,
+  "palletizeSuccessful": false,
   "errorMessage": "CELL DOOR OPEN",
-  "itemBarcode": null
+  "lastBoxBarcode": null
 }
 ```
 
@@ -118,18 +106,19 @@ When:
 
 ```json
 {
-  "pickId": 123,
-  "pickSuccessful": false,
+  "palletId": 123,
+  "palletizeSuccessful": false,
   "errorMessage": "Emergency button pressed",
-  "itemBarcode": null
+  "lastBoxBarcode": null
 }
 ```
+
 ## System Components
 
 | Component        | Port/Topic           | Description                                  |
 |------------------|----------------------|----------------------------------------------|
-| WMS API Server   | http://localhost:8080 | Receives pick requests from WMS              |
-| Cell API Client  | http://localhost:8081 | Processes pick operations                    |
+| WMS API Server   | http://localhost:8080 | Receives palletize requests from WMS         |
+| Cell API Client  | http://localhost:8081 | Processes palletize operations               |
 | HMI Dashboard    | http://localhost:8000 | Real-time monitoring interface               |
 | Barcode Scanner  | `/barcode`           | Publishes random 5-digit barcodes            |
 | Door Handle      | `/door_status`       | Tracks door open/closed state                |
@@ -191,8 +180,6 @@ kill -9 <PID>       # Terminate conflicting process
 - Check WebSocket connection in browser developer tools
 - Verify ROS nodes are publishing data
 
----
-
 ## Key Features of This README:
 
 1. **Structured Layout** - Clear sections with table of contents  
@@ -201,5 +188,3 @@ kill -9 <PID>       # Terminate conflicting process
 4. **Debugging Section** - Quick checks for each component  
 5. **API Documentation** - Ready-to-use curl examples  
 6. **Troubleshooting** - Common issues and solutions  
-
----
