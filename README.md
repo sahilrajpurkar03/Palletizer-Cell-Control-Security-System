@@ -1,5 +1,5 @@
 
-# Automated Palletizer Cell Control System
+# Palletizer Cell Control Security System
 
 A complete simulation of an automated palletizing robotic cell, including ROS 2 nodes, REST API server/client, and a real-time web-based HMI. The system handles palletizing requests from the warehouse management system (WMS), monitors the cell status (door, emergency button, stack-light), and allows human operators to interact through an HMI.
 
