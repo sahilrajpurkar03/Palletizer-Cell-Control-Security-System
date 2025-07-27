@@ -30,8 +30,8 @@ sudo apt update && sudo apt install -y     python3-pip     python3-colcon-common
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/your-repo/automated_palletizer_cell_control.git
-cd automated_palletizer_cell_control/
+git clone https://github.com/sahilrajpurkar03/Palletizer-Cell-Control-Security-System.git
+cd Palletizer-Cell-Control-Security-System/
 ```
 
 ### Install Python dependencies:
